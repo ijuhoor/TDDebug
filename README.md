@@ -3,7 +3,7 @@ TDDebug
 
 Idriss Juhoor
 
-Debug helper widget
+**Debug helper widget**
 
 ## Overview ##
 
@@ -13,18 +13,18 @@ It's a little widget that pops up a contextual menu for debugging purpose
 
 **It needs QuartzCore framework** otherwise you'll see a linker error.
 
-   //Create the hud:
-   TDDebugHud *hud = [TDDebugHud currentHud];
-   [[self view] addSubview:hud];
-  
-   //Remove all existing actions if there is:
-   [hud removeAllAction];
+    //Create the hud:
+    TDDebugHud *hud = [TDDebugHud currentHud];
+    [[self view] addSubview:hud];
    
-   //Add the actions
-   [hud addActionTitle:@"Say Hello"
-              onTarget:self
-          withSelector:@selector(debugSayHello:)];
-~~~
+    //Remove all existing actions if there is:
+    [hud removeAllAction];
+    
+    //Add the actions
+    [hud addActionTitle:@"Say Hello"
+               onTarget:self
+           withSelector:@selector(debugSayHello:)];
 
 ## Bonus
 - You can move the hud around if it gets in your way!
+- You can add as many actions as you want!
