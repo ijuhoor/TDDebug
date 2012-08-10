@@ -1,0 +1,4 @@
+TDDebug
+=======
+
+Debug helper widget
